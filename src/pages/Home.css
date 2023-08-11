@@ -1,0 +1,188 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Borel&family=Coiny&family=McLaren&family=Permanent+Marker&family=Signika+Negative:wght@500;600&display=swap');
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+   
+  
+  }
+  .container {
+    width: 80vw !important;
+   
+   
+  
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+   margin-bottom: 0;
+  }
+  
+  .box {
+    width: 60vmin;
+    height: 60vmin;
+    left: 20px;
+    position: relative;
+    
+    
+  }
+  
+  .spin-container {
+    width: 100%;
+    height: 100%;
+    animation: spin 12s ease-in-out infinite alternate;
+    position: relative;
+  }
+  
+  .shape {
+    width: 100%;
+    height: 100%;
+    transition: border-radius 1s ease-out;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite both alternate;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+  }
+  
+  .bd {
+    width: 140%;
+    height: 142%;
+    position: absolute;
+    left: -21%;
+    top: -21%;
+    background: url(../assets/images/pp6.jpg);
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    color: #003;
+    font-size: 5vw;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    animation: spin 12s ease-in-out infinite alternate-reverse;
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  @keyframes morph {
+    0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+    100% {border-radius: 40% 60%;} 
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  .hero .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateX(20px); /* Move text div to the right */
+    animation: fade-in-right 1s ease-out 1s forwards;
+  }
+  
+  
+  .hero .text h1 .name{
+    color: #a41fd0;
+    text-shadow: 3px 3px 5px #9013cf;
+  }
+  .hero .text h1 span{
+    color:  #32a2e7;
+    text-shadow: 3px 3px 5px #677af6;
+  
+  }
+  .hero .text h1 .freelancer{
+    color: #a41fd0;
+    text-shadow: 3px 3px 5px #9013cf;
+  }
+  
+  .hero .text  h1{ 
+    color:#f5f6f8; 
+    font-family: 'Coiny', cursive;
+    text-align: left;
+    font-size: 3vw;
+    text-shadow: 3px 3px 5px rgb(184, 220, 53);
+    
+  }
+  /* Add this CSS for responsive adjustments */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+    }
+  
+    .box {
+      width: 80vmin;
+      height: 80vmin;
+    }
+    .hero .text {
+     margin-left: 20vw;
+    }
+    .hero .text h1 {
+      font-size: 5vw;
+      text-align: left;
+      
+    }
+  }
+  /* Add this CSS to center the text div and align text left for phone screens */
+  @media (max-width: 400px) {
+    .hero .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  
+    .hero .text h1 {
+      font-size: 8vw;
+      text-align: left;
+    }
+  }
+  @media (max-width: 600px) {
+    .hero .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  
+    .hero .text h1 {
+      font-size: 5vw;
+      text-align: left;
+      
+    }
+  }
+  
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

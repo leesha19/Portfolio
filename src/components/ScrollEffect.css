@@ -1,0 +1,45 @@
+
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px); /* Initial translation */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fade-up {
+    transform: translateY(20px);
+  }
+  
+  .fade-up.fade-in {
+    transform: translateY(0);
+  }
+  
+  .fade-down {
+    transform: translateY(-20px);
+  }
+  
+  .fade-down.fade-in {
+    transform: translateY(0);
+  }
+  
+  .fade-left {
+    transform: translateX(-20px);
+  }
+  
+  .fade-left.fade-in {
+    transform: translateX(0);
+  }
+  
+  .fade-right {
+    transform: translateX(20px);
+  }
+  
+  .fade-right.fade-in {
+    transform: translateX(0);
+  }
+  

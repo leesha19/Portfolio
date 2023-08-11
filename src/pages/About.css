@@ -1,0 +1,50 @@
+/* about section*/
+.about-section{
+    background-color: #1c0125c2;
+    margin: 50px;
+    padding: 5vw 5vw;
+    height: auto;
+    scroll-behavior: smooth;
+    
+  }
+  
+  
+  .about-section .title{
+    margin-bottom: 5vw;
+  }
+  .about-section .title h1{
+    text-align: center;
+    color: #E5B8F4;
+    font-size: 3vw;
+    font-family: 'Coiny', cursive;
+    
+  }
+  .about-section .title p{
+    text-align: center;
+    color: white;
+    font-family: 'Coiny', cursive;
+    font-style: oblique;
+    font-size: 2vw;
+  }
+  @media screen and (max-width: 576px){
+    .about-section .title h1{
+      font-size: 6vw;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .about-section .title h1{
+      font-size: 6vw;}
+  }
+  @media screen and (max-width: 992px){
+    .about-section .title h1{
+      font-size: 6vw;}
+  }
+  @media screen and (max-width: 1200px){
+    .about-section .title h1{
+      font-size: 3vw;}
+  }
+  @media screen and (max-width: 1600px) {
+    .about-section .title h1{
+      font-size: 3vw;
+    }
+  }
