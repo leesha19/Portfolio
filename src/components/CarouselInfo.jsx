@@ -15,7 +15,7 @@ const CarouselInfo = [
     key :2,
     title: 'My-Portfolio', 
     imageUrl: img3,
-    link : "https://leesha19.github.io/swastik/",
+    link : "https://leesha19.github.io/Portfolio/",
     head :"Portfolio Website",
     content:"The current project which is my personal website  "
    },

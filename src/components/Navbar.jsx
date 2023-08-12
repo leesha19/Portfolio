@@ -5,7 +5,8 @@ import { Link } from 'react-scroll';
 import "./Navbar.css";
  const Navbar =() => {
 
-  const [openLinks,setOpenLinks]= useState(false)
+  const [openLinks,setOpenLinks]= useState(false);
+  
   const toggleNavbar = () => {
   setOpenLinks (!openLinks);
  };

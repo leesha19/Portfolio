@@ -63,9 +63,9 @@
 .flip {
     position: relative;
     display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 400px;
+    margin-right: 0.7vw;
+    margin-bottom: 2vw;
+    width: 25vw;
     
 }
     .flip > .front,
@@ -97,26 +97,38 @@
         color: #999;
         
       }
-  
-
-
+      
 .text-shadow {
 text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
-@media screen and (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px */
-  .flip {
-    width: 100%; /* Adjust width for smaller screens */
+@media only screen and (max-width: 600px){
+.front h1{
+  font-size: 5vw;
+}
+.flip{
+  width: 100%;
+}
+}
+@media only screen and (min-width: 600px){
+  .front h1{
+    font-size: 5vw;
   }
+  .flip{
+    width: 100%;
+  }
+  }
+  
 
-  /* Adjust other styles as needed */
-}@media screen and (max-width: 992px){
-  .flip {
-    width: 100%; /* Adjust width for smaller screens */
-  }
-}
-@media screen and (max-width: 1200px){
-  .flip {
-    width: 100%; /* Adjust width for smaller screens */
-  }
-}
+  @media only screen and (min-width: 768px){
+    .front h1{
+      font-size: 3vw;
+    }
+    .flip{
+      width: 24.1vw;
+    }
+    }
+    @media only screen and (min-width: 992px){
+      .flip{
+        width: 25vw;
+      }
+    }

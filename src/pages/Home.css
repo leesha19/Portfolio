@@ -9,10 +9,7 @@
   }
   .container {
     width: 80vw !important;
-   
-   
-  
-    height: 90vh;
+    height: 40vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +21,7 @@
   .box {
     width: 60vmin;
     height: 60vmin;
-    left: 20px;
+    left: 1vw;
     position: relative;
     
     
@@ -83,8 +80,8 @@
   .hero .text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
+    
+     
     margin-right: 10vw;
     margin-top: 5vw;
     opacity: 0; /* Initially set opacity to 0 */
@@ -116,7 +113,7 @@
     
   }
   /* Add this CSS for responsive adjustments */
-  @media (max-width: 768px) {
+  @media only screen and  (max-width: 600px)  {
     .hero {
       flex-direction: column;
       align-items: center;
@@ -124,44 +121,46 @@
     }
   
     .box {
-      width: 80vmin;
-      height: 80vmin;
+      width: 50vmin;
+      height: 50vmin;
     }
     .hero .text {
-     margin-left: 20vw;
+     margin: 0;
+     display: flex;
+    
     }
     .hero .text h1 {
       font-size: 5vw;
       text-align: left;
-      
+    }
+    .container{
+      height: 60vw;
     }
   }
   /* Add this CSS to center the text div and align text left for phone screens */
-  @media (max-width: 400px) {
-    .hero .text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
+  @media only screen and (min-width: 600px) {
+    .container{
+      height: 50vw;
     }
-  
-    .hero .text h1 {
-      font-size: 8vw;
-      text-align: left;
+    .box {
+      width: 40vmin;
+      height: 40vmin;
     }
   }
-  @media (max-width: 600px) {
-    .hero .text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
+  @media only screen and (min-width: 768px){
+    .container{
+      height: 50vw;
     }
-  
-    .hero .text h1 {
-      font-size: 5vw;
-      text-align: left;
-      
+    .box {
+      width: 50vmin;
+      height: 50vmin;
+    }
+    
+  }
+  @media only screen and (min-width: 992px){
+    .box {
+      width: 60vmin;
+      height: 60vmin;
     }
   }
   

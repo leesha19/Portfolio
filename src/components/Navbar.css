@@ -20,8 +20,8 @@
     color: white;
     text-align: center;
     font-family: 'Coiny', cursive;
-    font-size: 20px;
-    margin: 35px;
+     font-size: 20px;
+     margin: 35px;
   }
   
   
@@ -83,15 +83,7 @@
     margin: 5px;
   }
   
-  
-  @media only screen and (max-width: 900px) {
-    .navbar .right-side a {
-      width: 70px;
-    }
-    .navbar .left-side {
-      padding-left: 50px;
-    }
-  }
+
   
   @media only screen and (max-width: 600px) {
     .navbar .right-side a {
@@ -100,11 +92,46 @@
   
     .navbar .right-side {
       justify-content: flex-end;
-      padding-right: 50px;
+      padding-right:5vw ;
     }
   
     .navbar .right-side button {
       display: inherit;
+    }
+    .navbar .left-side {
+      flex: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      
+    
+    }
+    .navbar  h1{
+      color: white;
+      
+      font-family: 'Coiny', cursive;
+      font-size: 4vw;
+      margin: 3vw;
+    }
+    .navbar  .left-side {
+      padding-left: 5vw !important;
+    }
+    .navbar .right-side svg {
+      font-size: 6vw;
+    }
+    .navbar #open .hiddenLinks {
+      display: inherit;
+      margin-left: 1vw;
+     
+    }
+    
+    .navbar #close .hiddenLinks {
+      display: none;
+    }
+    
+    .navbar #open a {
+      width: 10vw;
+      margin: 3vw;
     }
   }
   
@@ -116,5 +143,7 @@
     .hiddenLinks {
       display: none;
     }
+   
+   
   }
   

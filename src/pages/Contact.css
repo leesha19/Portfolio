@@ -86,3 +86,12 @@
     font-style: oblique;
     font-size: 2vw;
 }
+@media only screen and (max-width:768px){
+  .contact-section .title h1{
+    font-size: 5vw;
+  }
+  .title p{
+    font-size: 3vw;
+  }
+ 
+}

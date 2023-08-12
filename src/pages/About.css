@@ -26,25 +26,28 @@
     font-style: oblique;
     font-size: 2vw;
   }
-  @media screen and (max-width: 576px){
+  @media only screen and (max-width: 600px){
     .about-section .title h1{
-      font-size: 6vw;
+      font-size: 5vw;
+    }
+    .about-section .title p{
+      font-size :3vw ;
     }
   }
-  @media screen and (max-width: 768px){
+
+  @media only screen and (min-width: 600px){
     .about-section .title h1{
-      font-size: 6vw;}
+      font-size: 5vw;
+    }
+    .about-section .title p{
+      font-size :3vw ;
+    }
   }
-  @media screen and (max-width: 992px){
-    .about-section .title h1{
-      font-size: 6vw;}
-  }
-  @media screen and (max-width: 1200px){
-    .about-section .title h1{
-      font-size: 3vw;}
-  }
-  @media screen and (max-width: 1600px) {
+  @media only screen and (min-width: 768px) {
     .about-section .title h1{
       font-size: 3vw;
+    }
+    .about-section .title p{
+      font-size :2vw ;
     }
   }
