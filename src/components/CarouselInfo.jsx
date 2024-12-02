@@ -5,11 +5,11 @@ import img3 from "./images/image3.png";
 const CarouselInfo = [
   { 
     key :1,
-    title: 'Itchy Bun',
+    title: 'The Voice Notes',
     imageUrl: img1,
-    link : "https://leesha19.github.io/itchy5/",
-    head:"Restaurant website",
-    content:"A freelancing project from upwork for a singpaore based restaurant ",
+    link : "https://thevoicenotes.in",
+    head:"Music Academy website",
+    content:"A freelancing project of a Music academy",
   },
   { 
     key :2,
@@ -21,11 +21,11 @@ const CarouselInfo = [
    },
   { 
     key :3,
-    title: 'Swastik clinic', 
+    title: 'Get-fit Mantra', 
     imageUrl: img2,
-     link : "https://leesha19.github.io/swastik/",
-     head:"Static website",
-     content:"It is a static website which is converted from a figma design",
+     link : "https://get-fit-mantra.web.app",
+     head:"dietician's portfolio",
+     content:"A dietician portfolio website",
     },
   ];
   
